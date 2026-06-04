@@ -7,7 +7,7 @@ version: 1
 Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly ordered bottom-up: format primitives, then commands, then packaging.
 
 - [vat-s3p] [in-progress] [by:jared] Add remote repo detection to the VAT skill that just teaches agent that remote backlog repos are a possibility more than anything
-- [vat-f1w] [agent-ready] Markdown parser: parsed region into preamble + task entries (see ./items/vat-f1w.md)
+- [vat-f1w] [in-progress] [by:claude-routine] [agent-ready] Markdown parser: parsed region into preamble + task entries (see ./items/vat-f1w.md)
 - [vat-g5y] [agent-ready] [blocked-by:vat-f1w] Bullet line tokenizer (markers + title) (see ./items/vat-g5y.md)
 - [vat-j3z] [agent-ready] [blocked-by:vat-g5y] Bullet line serializer (canonical order) (see ./items/vat-j3z.md)
 - [vat-p7d] [agent-ready] Version check cross-cutting helper (see ./items/vat-p7d.md)
