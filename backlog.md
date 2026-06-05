@@ -10,7 +10,6 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 - [vat-f1w] [in-progress] [by:claude-routine] [agent-ready] Markdown parser: parsed region into preamble + task entries (see ./items/vat-f1w.md)
 - [vat-g5y] [agent-ready] [blocked-by:vat-f1w] Bullet line tokenizer (markers + title) (see ./items/vat-g5y.md)
 - [vat-j3z] [agent-ready] [blocked-by:vat-g5y] Bullet line serializer (canonical order) (see ./items/vat-j3z.md)
-- [vat-p7d] [in-progress] [by:claude-routine] [agent-ready] Version check cross-cutting helper (see ./items/vat-p7d.md)
 - [vat-q2e] [agent-ready] [blocked-by:vat-r6f] `vat init` command (see ./items/vat-q2e.md)
 - [vat-r6f] [agent-ready] README template (baked into binary) (see ./items/vat-r6f.md)
 - [vat-s9g] [agent-ready] `vat sync` command — ID assignment (see ./items/vat-s9g.md)
