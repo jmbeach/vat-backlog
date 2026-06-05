@@ -10,7 +10,6 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 - [vat-f1w] [in-progress] [by:claude-routine] [agent-ready] Markdown parser: parsed region into preamble + task entries (see ./items/vat-f1w.md)
 - [vat-g5y] [agent-ready] [blocked-by:vat-f1w] Bullet line tokenizer (markers + title) (see ./items/vat-g5y.md)
 - [vat-j3z] [agent-ready] [blocked-by:vat-g5y] Bullet line serializer (canonical order) (see ./items/vat-j3z.md)
-- [vat-q2e] [in-progress] [by:claude-routine] [agent-ready] `vat init` command (see ./items/vat-q2e.md)
 - [vat-s9g] [agent-ready] `vat sync` command — ID assignment (see ./items/vat-s9g.md)
 - [vat-t1h] [agent-ready] `vat sync` command — notes extraction (see ./items/vat-t1h.md)
 - [vat-v3k] [agent-ready] [blocked-by:vat-j3z] `vat sync` command — marker normalization and write (see ./items/vat-v3k.md)
@@ -25,7 +24,7 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 - [vat-g4w] [agent-ready] [blocked-by:vat-z4q] End-to-end CLI tests (see ./items/vat-g4w.md)
 - [vat-h2y] [agent-ready] Project README at repo root (see ./items/vat-h2y.md)
 - [vat-j5z] [agent-ready] [blocked-by:vat-g4w] Release packaging (see ./items/vat-j5z.md)
-- [vat-k1b] [agent-ready] [blocked-by:vat-q2e] Shell completions (see ./items/vat-k1b.md)
+- [vat-k1b] [agent-ready] Shell completions (see ./items/vat-k1b.md)
 - [vat-n3x] [agent-ready] Switch test runner to `cargo-nextest` (see ./items/vat-n3x.md)
 
 ---
