@@ -16,7 +16,7 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 - [vat-x8n] [agent-ready] [blocked-by:vat-j3z] `vat block <id> <blocker-id>` command (see ./items/vat-x8n.md)
 - [vat-y2p] [agent-ready] [blocked-by:vat-j3z] `vat unblock <id>` command (see ./items/vat-y2p.md)
 - [vat-z4q] [agent-ready] [blocked-by:vat-j3z] `vat done <id>` command (see ./items/vat-z4q.md)
-- [vat-c9s] [agent-ready] Exit codes wiring (see ./items/vat-c9s.md)
+- [vat-c9s] [in-progress] [by:claude-routine] [agent-ready] Exit codes wiring (see ./items/vat-c9s.md)
 - [vat-d3t] [agent-ready] [blocked-by:vat-v3k] Snapshot / golden-file tests for sync (see ./items/vat-d3t.md)
 - [vat-f7v] [agent-ready] [blocked-by:vat-z4q] Snapshot tests for the other commands (see ./items/vat-f7v.md)
 - [vat-g4w] [agent-ready] [blocked-by:vat-z4q] End-to-end CLI tests (see ./items/vat-g4w.md)
