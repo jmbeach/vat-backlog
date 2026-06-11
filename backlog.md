@@ -20,7 +20,6 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 - [vat-f7v] [agent-ready] [blocked-by:vat-z4q] Snapshot tests for the other commands (see ./items/vat-f7v.md)
 - [vat-g4w] [agent-ready] [blocked-by:vat-z4q] End-to-end CLI tests (see ./items/vat-g4w.md)
 - [vat-j5z] [agent-ready] [blocked-by:vat-g4w] Release packaging (see ./items/vat-j5z.md)
-- [vat-n3x] [in-progress] [by:claude-routine] [agent-ready] Switch test runner to `cargo-nextest` (see ./items/vat-n3x.md)
 
 ---
 
