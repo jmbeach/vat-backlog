@@ -7,12 +7,11 @@ version: 1
 Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly ordered bottom-up: format primitives, then commands, then packaging.
 
 - [vat-s3p] [in-progress] [by:jared] Add remote repo detection to the VAT skill that just teaches agent that remote backlog repos are a possibility more than anything
-- [vat-j3z] [in-progress] [by:jared] [agent-ready] Bullet line serializer (canonical order) (see ./items/vat-j3z.md)
-- [vat-v3k] [agent-ready] [blocked-by:vat-j3z] `vat sync` command — marker normalization and write (see ./items/vat-v3k.md)
-- [vat-w5m] [agent-ready] [blocked-by:vat-j3z] `vat start <id>` command (see ./items/vat-w5m.md)
-- [vat-x8n] [agent-ready] [blocked-by:vat-j3z] `vat block <id> <blocker-id>` command (see ./items/vat-x8n.md)
-- [vat-y2p] [agent-ready] [blocked-by:vat-j3z] `vat unblock <id>` command (see ./items/vat-y2p.md)
-- [vat-z4q] [agent-ready] [blocked-by:vat-j3z] `vat done <id>` command (see ./items/vat-z4q.md)
+- [vat-v3k] [agent-ready] `vat sync` command — marker normalization and write (see ./items/vat-v3k.md)
+- [vat-w5m] [agent-ready] `vat start <id>` command (see ./items/vat-w5m.md)
+- [vat-x8n] [agent-ready] `vat block <id> <blocker-id>` command (see ./items/vat-x8n.md)
+- [vat-y2p] [agent-ready] `vat unblock <id>` command (see ./items/vat-y2p.md)
+- [vat-z4q] [agent-ready] `vat done <id>` command (see ./items/vat-z4q.md)
 - [vat-d3t] [agent-ready] [blocked-by:vat-v3k] Snapshot / golden-file tests for sync (see ./items/vat-d3t.md)
 - [vat-f7v] [agent-ready] [blocked-by:vat-z4q] Snapshot tests for the other commands (see ./items/vat-f7v.md)
 - [vat-g4w] [agent-ready] [blocked-by:vat-z4q] End-to-end CLI tests (see ./items/vat-g4w.md)
