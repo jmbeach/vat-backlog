@@ -2,8 +2,12 @@
 id: vat-m2k
 ---
 
-Surfaced by review of PR #48 (vat-w5m). `cmd_start.rs` carries a private serialize helper (essentially "re-serialize the parsed region with one bullet replaced") that `block`, `unblock`, and `done` (vat-x8n, vat-y2p, vat-z4q) will each duplicate verbatim.
+Surfaced by review of PRs #48/#52/#53/#54 (the vat start/unblock/block/done commands). Each command module independently duplicates the same scaffolding:
 
-Note: vat-v3k did NOT centralize this. Its sync path serializes bullets inline because sync entries hold borrowed `&str`, not parsed `Bullet` structs — so there is no existing shared API to adopt. This task therefore CREATES the shared single-bullet-replace helper and adopts it across `vat start/block/unblock/done`, removing the per-command duplicates.
+- **Serialize helper**: `serialize_region_with_replaced_bullet` (re-serialize the parsed region with one bullet replaced) currently lives `pub(crate)` in `cmd_start.rs` — a command-specific home for a general bullet-mutation utility.
+- **Test helpers**: `make_backlog_dir`, `write_backlog`, `read_backlog`, and `HEADER` are copy-pasted byte-for-byte across the command test modules.
+- **Backlog-path constant**: `Path::new("backlog")` is constructed at ~5 separate sites in `main.rs` with no shared constant.
 
-Keep behavior identical; this is a dedup refactor, not a behavior change. Blocked-by vat-z4q so all four sibling commands exist before consolidating their duplicated helpers.
+Note: vat-v3k did NOT centralize the serialize path (its sync code serializes inline because sync entries hold borrowed `&str`, not parsed `Bullet` structs). So this task CREATES the shared homes and adopts them across all four commands.
+
+Scope: move the serialize helper to a shared module (e.g. alongside `Bullet`/`ParsedRegion`), extract the duplicated test helpers into one shared test-support module, and introduce a single backlog-path constant. Behavior-preserving dedup, not a behavior change. Blocked-by vat-z4q so all four sibling commands exist before consolidating.
