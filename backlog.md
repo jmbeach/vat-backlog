@@ -6,7 +6,6 @@ version: 1
 
 Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly ordered bottom-up: format primitives, then commands, then packaging.
 
-- [vat-x8n] [in-progress] [by:jared] [agent-ready] `vat block <id> <blocker-id>` command (see ./items/vat-x8n.md)
 - [vat-y2p] [in-progress] [by:jared] [agent-ready] `vat unblock <id>` command (see ./items/vat-y2p.md)
 - [vat-m2k] [agent-ready] Consolidate duplicated command-module code across vat start/block/unblock/done — shared single-bullet-replace serialize helper, shared test helpers, backlog-path constant (see ./items/vat-m2k.md)
 - [vat-d3t] [agent-ready] Snapshot / golden-file tests for sync (see ./items/vat-d3t.md)
