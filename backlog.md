@@ -8,7 +8,7 @@ Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly o
 
 - [vat-s3p] [in-progress] [by:jared] Add remote repo detection to the VAT skill that just teaches agent that remote backlog repos are a possibility more than anything
 - [vat-v3k] [in-progress] [by:jared] [agent-ready] `vat sync` command — marker normalization and write (see ./items/vat-v3k.md)
-- [vat-w5m] [agent-ready] `vat start <id>` command (see ./items/vat-w5m.md)
+- [vat-w5m] [in-progress] [by:claude-routine] [agent-ready] `vat start <id>` command (see ./items/vat-w5m.md)
 - [vat-x8n] [agent-ready] `vat block <id> <blocker-id>` command (see ./items/vat-x8n.md)
 - [vat-y2p] [agent-ready] `vat unblock <id>` command (see ./items/vat-y2p.md)
 - [vat-z4q] [agent-ready] `vat done <id>` command (see ./items/vat-z4q.md)
