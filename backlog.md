@@ -7,7 +7,7 @@ version: 1
 Tasks to bring VAT from spec to a working `cargo install`-able binary. Roughly ordered bottom-up: format primitives, then commands, then packaging.
 
 - [vat-d3t] [in-progress] [by:jared] [agent-ready] Snapshot / golden-file tests for sync (see ./items/vat-d3t.md)
-- [vat-f7v] [agent-ready] Snapshot tests for the other commands (see ./items/vat-f7v.md)
+- [vat-f7v] [in-progress] [by:jared] [agent-ready] Snapshot tests for the other commands (see ./items/vat-f7v.md)
 - [vat-g4w] [in-progress] [by:jared] [agent-ready] End-to-end CLI tests (see ./items/vat-g4w.md)
 - [vat-j5z] [agent-ready] [blocked-by:vat-g4w] Release packaging (see ./items/vat-j5z.md)
 
